@@ -31,6 +31,9 @@ st.set_page_config(
 col1, col2=st.columns([1.2,4.8])
 
 with col1:
+    st.image("./logo/가운소녀.png",width=200)
+
+with col2:
     st.markdown(
         """
         <h1>먹은만큼 운동하자</h1>
