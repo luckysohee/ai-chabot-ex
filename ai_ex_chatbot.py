@@ -196,7 +196,7 @@ with col2:
 
     if "messages" not in st.session_state:
         st.session_state.messages = [
-            {"role": "assistant", "content": {"one_line": "먹은거 다 적어라. 털어보자!", "intake_summary": [], "kcal_estimate": {}, "workout_plan": {"A_home_20_30min": "", "B_gym_40_60min": "", "C_pilates_stretch_10min": ""}, "target_burn_kcal": 0, "next_meal_guides": [], "followup_question": ""}}
+            {"role": "assistant", "content": "먹은거 다 적어라. 털어보자!", "intake_summary": [], "kcal_estimate": {}, "workout_plan": {"A_home_20_30min": "", "B_gym_40_60min": "", "C_pilates_stretch_10min": ""}, "target_burn_kcal": 0, "next_meal_guides": [], "followup_question": ""}
         ]
 
     # 대화 출력(assistant는 JSON으로 보여주기)
