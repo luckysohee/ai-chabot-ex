@@ -55,7 +55,7 @@ def get_ai_response(question,intensity="보통"):
 #------------------------------------------
 
 st.set_page_config(
-    page_title="AI 먹운교수",
+    page_title="AI 먹털교수",
     page_icon='./logo/가운소녀.png'
 )
 
@@ -67,8 +67,8 @@ with col1:
 with col2:
     st.markdown(
         """
-        <h1>먹은만큼 운동하자</h1>
-        <p>이 챗봇은 먹은만큼 칼로리 계산 및 운동 방법을 제안합니다. </p>
+        <h1>먹은만큼 털어야지</h1>
+        <p>이 챗봇은 식단 계산 및 운동 방법을 제안합니다. </p>
         """,
         unsafe_allow_html=True
     )
@@ -76,7 +76,7 @@ with col2:
 
     if "messages" not in st.session_state:
         st.session_state.messages=[
-            {'role':'assistant','content':'먹은거 다 적어봐라. 그만큼 털어보자!'}
+            {'role':'assistant','content':'먹은거 다 적어라. 털어보자!'}
         ]
 
     for msg in st.session_state.messages:
