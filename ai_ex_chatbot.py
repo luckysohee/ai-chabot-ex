@@ -67,7 +67,7 @@ with col1:
 with col2:
     st.markdown(
         """
-        <h1>먹은만큼 털어야지</h1>
+        <h1>칼로리 청산일지</h1>
         <p>이 챗봇은 식단 계산 및 운동 방법을 제안합니다. </p>
         """,
         unsafe_allow_html=True
@@ -89,7 +89,7 @@ with col2:
         horizontal=True
     )
     
-    question=st.chat_input('시간별로 섭취 음식을 입력하세요.')
+    question=st.chat_input('섭취 음식을 입력하세요.')
     if question:
         question=question.replace('\n','  \n')
         st.session_state.messages.append({'role':'user','content':question})
