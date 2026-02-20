@@ -41,6 +41,12 @@ with col2:
         """,
         unsafe_allow_html=True
     )
+    st.markdown("---")
+
+    if "messages" not in st.session_state:
+        st.session_state.messages=[
+            {'role':'assistant','content':'먹은거 다 적어봐라. 그만큼 털어보자!'}
+        ]
 
     for msg in st.session_state.messages:
         st.chat_message(msg['role']).write(msg['content'])
