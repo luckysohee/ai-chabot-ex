@@ -40,6 +40,8 @@ def get_ai_response(question):
     사용자 입력(먹은 것):
     {question}
 
+    운동 강도: {intensity}
+
     요구사항:
     - 반드시 운동 처방 A/B/C안을 포함해서 답변할 것.
     - 위에서 정의한 '답변 구조'를 그대로 지킬 것.
