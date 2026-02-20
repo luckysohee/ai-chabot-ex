@@ -35,7 +35,7 @@ config=types.GenerateContentConfig(
 '''
 )  
 
-def get_ai_response(question):
+def get_ai_response(question,intensity="보통"):
     prompt = f"""
     사용자 입력(먹은 것):
     {question}
@@ -48,7 +48,7 @@ def get_ai_response(question):
     """
     response=client._models.generate_content(
         model="gemini-3-flash-preview",
-        contents=question,
+        contents=prompt,
         config=config
     )
     return response.text
@@ -95,7 +95,7 @@ with col2:
         st.session_state.messages.append({'role':'user','content':question})
         st.chat_message('user').write(question)
 
-        with st. spinner('응답 작성 중'):
+        with st.spinner('응답 작성 중'):
             response=get_ai_response(question,intensity)
             st.session_state.messages.append({'role':'assistant','content':response})
             st.chat_message('assistant').write(response)
