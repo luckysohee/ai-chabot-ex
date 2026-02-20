@@ -16,7 +16,7 @@ config=types.GenerateContentConfig(
 
 def get_ai_response(question):
     response=client._models.generate_content(
-        model=""gemini-3-flash-preview",
+        model="gemini-3-flash-preview",
         contents=question,
         config=config
     )
