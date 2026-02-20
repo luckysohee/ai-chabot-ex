@@ -8,7 +8,7 @@ client=genai.Client(api_key=api_key)
 
 from google.genai import types
 config=types.GenerateContentConfig(
-    max_output_tokens=1500,
+    max_output_tokens=2000,
     response_mime_type='text/plain',
     temperature=0.3,
     system_instruction='''
